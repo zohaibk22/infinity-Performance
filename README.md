@@ -73,23 +73,23 @@ The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby 
 
 - Home Page
 
-![Dummy Link](url)
+![https://wireframe.cc/khaXHD](url)
 
 - Login
 
-![Dummy Link](url)
+![https://wireframe.cc/VIB6vb](url)
 
 - View all Projects
 
-![Dummy Link](url)
+![https://wireframe.cc/LKnWeq](url)
 
 - View Single Project
 
-![Dummy Link](url)
+![https://wireframe.cc/D6bruC](url)
 
 - Add New Project
 
-![Dummy Link](url)
+![https://wireframe.cc/Q5t9iQ](url)
 
 - View Modification
 
