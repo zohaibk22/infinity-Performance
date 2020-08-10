@@ -144,9 +144,15 @@ src
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |   Footer       | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|   Home    |   class    |   y   |   y   | _The gallery will render the posts using cards in flexbox._      |
+|   Add_car    |   class    |   y   |   y   | _The gallery will render the posts using cards in flexbox._      |
+|   View_all_vehicles  |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
+|   View_single_vehicle    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
+|      Add_Modification |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
+| View_all_Modifications | class |   y   |   y   | _The cards will render the post info via props._                 |
+|   View_singe_Modification   | class |   y   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|   Login   | class |   y   |   y   | _The footer will show info about me and a link to my portfolio._ |
+|   Register  | class |   y   |   y   | _The footer will show info about me and a link to my portfolio._ |
 
 #### Time Estimates
 
