@@ -50,10 +50,6 @@ The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby 
 
 <br>
 
-### Challenges
-
-<br>
-
 ### Libraries and Dependencies
 
 > Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
@@ -142,17 +138,16 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|   Footer       | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Home    |   class    |   y   |   y   | _The gallery will render the posts using cards in flexbox._      |
-|   Add_car    |   class    |   y   |   y   | _The gallery will render the posts using cards in flexbox._      |
-|   View_all_vehicles  |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-|   View_single_vehicle    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-|      Add_Modification |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| View_all_Modifications | class |   y   |   y   | _The cards will render the post info via props._                 |
-|   View_singe_Modification   | class |   y   |   n   | _The footer will show info about me and a link to my portfolio._ |
-|   Login   | class |   y   |   y   | _The footer will show info about me and a link to my portfolio._ |
-|   Register  | class |   y   |   y   | _The footer will show info about me and a link to my portfolio._ |
+|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo             |
+|   Footer       | functional |   n   |   n   | The Footer will proivide links to the contact information, Github and LinkedIn     |
+|   Home    |   class    |   y   |   y   | The Home will display a description of the Webisite with an option to sign up and Login      |
+|   Add_vehicle    |   class    |   y   |   y   | Add_vehicle will have an option to add the project vehcile the user is working on with a short description of it  |
+|   View_all_vehicles  |   class    |   y   |   n   | View_all_vehilces will serve as the main menu landing page of the webisite. User can view all projects   |
+|   View_single_vehicle    |   class    |   y   |   n   | View_single_vehicle will display details about the project and the list of modifications assiociated with the project. It will also allow you to edit details about the project vehicle or delete the project as a whole.       |
+|      Add_Modification |   class    |   y   |   n   | Add Modification will allow user to add a modification that they would like to tackle for that specific project    |
+|   View_singe_Modification   | class |   y   |   n   | View_single_modification will show the details of that specific modification with an option to edit or delete that modification |
+|   Login   | class |   y   |   y   | Login landing will have a form that will ask for username, password, and confirm password input fields|
+|   Register  | class |   y   |   y   | Register landing page will be a form that will allow users to enter in their email, username, password, and confirm password fields |
 
 #### Time Estimates
 
