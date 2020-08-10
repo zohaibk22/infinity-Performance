@@ -68,31 +68,32 @@ The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+
+![https://wireframe.cc/Xrbbbq](url)
+
+- Home Page
 
 ![Dummy Link](url)
 
-- Desktop Landing
+- Login
 
 ![Dummy Link](url)
 
-- Desktop Hero
+- View all Projects
 
 ![Dummy Link](url)
 
-- Resource Index
+- View Single Project
 
 ![Dummy Link](url)
 
-- Resource Show
+- Add New Project
 
 ![Dummy Link](url)
 
-- Tablet Resource Index
+- View Modification
 
-![Dummy Link](url)
 
-- Mobile Resource Index
 
 #### Component Tree
 
