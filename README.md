@@ -25,13 +25,13 @@
 
 ## Overview
 
-_**Infinity Perforance** is a project manager app for your current and future project cars. This app will let you track all the cars that you have and all the modifications you plan on doing. You will be able to enter in the type of modification you'd like to make to your car, its cost, and the amount of power it will add to your drive terrian. As you begin completing the list of modifications, you'll be able to cross them off and update the list to show you which modifications you have left. Once all the modifcations are complete, you are able to deem the project as complete. Once in a complete state, it will be moved to a completed section of your home screen.
+**Infinity Perforance** is a project manager app for your current and future project cars. This app will let you track all the cars that you have and all the modifications you plan on doing. You will be able to enter in the type of modification you'd like to make to your car, its cost, and the amount of power it will add to your drive terrian. As you begin completing the list of modifications, you'll be able to cross them off and update the list to show you which modifications you have left. Once all the modifcations are complete, you are able to deem the project as complete. Once in a complete state, it will be moved to a completed section of your home screen.
 
 <br>
 
 ## MVP
 
-_The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby on rails backend and react front end. Further More: 
+The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby on rails backend and react front end. Further More: 
 - User, Cars, and Modification Tables for my database
 - User login option for full autheniciation
 - One to many association with Users to  Cars.
@@ -60,12 +60,11 @@ _The **Inifnity Performance** MVP will consist of a full CRUD design with a ruby
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|       Ruby       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Ruby on Rails| | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-|       Axios      | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Front end Development                      |
+|   React Router   | Developing all Landing pages               |
+|       Ruby       | Assisting with Backend Development         |
+|   Ruby on Rails| | Backend Server and Database Development    | 
+|       Axios      | API call to our PostgreSQL database        |
 
 <br>
 
@@ -117,7 +116,23 @@ src
       |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ App.jsx 
+      |__Footer.js
+      |__Home.jsx
+      |__AllVehicles.jsx
+      |__SingleVehicle.jsx
+      |__AddVehicle.jsx
+      |__AllModifications.jsx
+      |__Sinlge Modification.jsx
+      |__AddModification.jsx
+      |__Login.jsx
+      |__Register.jsx
 |__ services/
+      |__APIconfig.js
+      |__auth.js
+      |__cars.js
+      |__modifications.js
+      
 
 ```
 
@@ -128,20 +143,22 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
+|   Footer       | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
 |   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| User Authenication  |    M     |     4 hrs      |    TBH       |    TBH   |
+| Create CRUD Actions for cars  |    H     |     8 hrs      |     TBH    |     TBD     |
+| Create CRUD Actions for Modifications  |    H     |     5 hrs      |     TBH    |     TBD     |
+| Backend Server      |    H     |     5 hrs      |     TBH     |     TBD     |
+| CSS Styling         |    H     |     5 hrs      |     TBH     |     TBD     |
+| TOTAL               |          |     27 hrs      |     TBH    |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -159,9 +176,10 @@ ERD: https://app.diagrams.net/#G1QpptoRp0LPFDeLUFIm28wdeD0a0plufO
 ***
 
 ## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
+ - Implement a timeline feature with calender
+ - Estimate total value of vehicle after modifications
+ - Reminder functionality about tasks
+ - Be able to put the project up for sale for other users to see
 ***
 
 ## Code Showcase
