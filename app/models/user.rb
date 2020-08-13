@@ -1,6 +1,10 @@
 class User < ApplicationRecord
     has_secure_password
 
+    has_many :vehicles
+
+
+
     validates :password, length: { minimum: 8 } ( message: "Password must be above 8 characters long")
     validates :username, presence: true, uniqueness: true
     validates :email, presence: true, uniqueness: true
