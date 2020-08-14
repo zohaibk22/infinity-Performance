@@ -25,12 +25,7 @@ export const deleteVehicle = async (id) => {
   return resp;
 };
 
-export const addModification = async (
-  id,
-  modification_id,
-  modificationData
-) => {
-  const resp = await api.post(
-    `modifications/${modification_id}/vehicles/${id}`
-  );
+export const addModification = async (id, modification_id) => {
+  const resp = await api.get(`modifications/${modification_id}/vehicles/${id}`);
+  return resp.data;
 };
