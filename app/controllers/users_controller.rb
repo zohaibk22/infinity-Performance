@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, :authorize_request only: [:show, :update, :destroy], except: :create
+  before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
   def index
@@ -20,9 +20,9 @@ class UsersController < ApplicationController
     if @user.save  #saves data input 
       @token = encode({id: @user.id})
       render json: {
-        @user.attributes.except("password_digest"),
+        user: @user.attributes.except("password_digest"),
         token: @token
-      }, status :created
+      }, status: :created
   
     else
       render json: @user.errors, status: :unprocessable_entity
