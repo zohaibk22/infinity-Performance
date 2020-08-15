@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import {loginUser} from "../../Services/api-helper"
+import {loginUser} from "../../Services/auth"
 
 export default function Login(props) {
     const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ export default function Login(props) {
         password: ''
     })
 
-    let handleChange = (e) => {
+    const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData({
             ...formData,
@@ -16,17 +16,17 @@ export default function Login(props) {
         })
     }
     
-    handleSubmit = (e) => {
-        e.preventDefault()
-        const userResponse = await loginUser(formData);//since we need to use this response from our DB, we need to add await
-
-
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const userData = await loginUser(formData); //since we need to use this response from our DB, we need to add await
+        props.setCurrentUser(userData);
+        props.history.push('/')
     }
 
     return (
         <div>
             <h3>Login</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Username:</label>
                 <input 
                     type="text" 
