@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import {loginUser} from "../../Services/api-helper"
 
 export default function Login(props) {
     const [formData, setFormData] = useState({
@@ -17,9 +18,11 @@ export default function Login(props) {
     
     handleSubmit = (e) => {
         e.preventDefault()
+        const userResponse = await loginUser(formData);//since we need to use this response from our DB, we need to add await
 
 
     }
+
     return (
         <div>
             <h3>Login</h3>
@@ -40,7 +43,7 @@ export default function Login(props) {
                     onChange = {handleChange}
                 />
 
-                <button>Submit</button>
+                <button>Submit</button> 
 
                 
             </form>

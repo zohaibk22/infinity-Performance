@@ -12,6 +12,7 @@ export default function Main() {
             <Route path = '/login'render = {(props) => ( //props within this paremeter field are react-router props
                 <Login
                 {...props} //add all react router props into login
+                setCurrentUser = {props.setCurrentUser}
                 />
             )}
             />
