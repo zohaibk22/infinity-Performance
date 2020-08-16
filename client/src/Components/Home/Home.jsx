@@ -15,7 +15,7 @@ export default function Home(props) {
 
                 </div>
             ))}
-            <button>Add Project +</button>
+            <button onClick = {()=> (props.history.push('/vehicles'))}>Add Project +</button>
         </div>
     )
 }

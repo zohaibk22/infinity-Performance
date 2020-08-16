@@ -7,6 +7,7 @@ import Intro from '../../Intro/Intro'
 import Home from '../../Home/Home'
 import Register from '../../Register/Register'
 import OneVehicle from '../../OneVehicle/OneVehicle'
+import NewVehicle from '../../NewVehicle/NewVehicle'
 
 
 
@@ -47,7 +48,7 @@ export default function Main(props) {
             )}/>
             
             
-            <Route path = '/login' render = {(props) => ( //props within this paremeter field are react-router props
+            <Route path = '/login' exact render = {(props) => ( //props within this paremeter field are react-router props
                 <Login
                 {...props} //add all react router props into login
                 setCurrentUser={setCurrentUser}
@@ -56,7 +57,7 @@ export default function Main(props) {
 
             />
 
-            <Route path='/register' render={(props) => (
+            <Route path='/register' exact render={(props) => (
                 <Register
                     {...props} //add all react router props into login
                 setCurrentUser={setCurrentUser}
@@ -66,15 +67,25 @@ export default function Main(props) {
             />
             
 
-            <Route path='/vehicles/:id'  render={(props) => (
+            <Route path='/vehicles/:id'  exact render={(props) => (
                 <OneVehicle 
                  {...props}
                  />
             )}
             />
 
-            <Route path='/vehicles'/>
+            <Route path='/vehicles' exact render={(props) => (
+                <NewVehicle
+                
+                {...props}
+
+                
+                
+                />
+            )}
             
+            />
+
         </main>
     )
 }
