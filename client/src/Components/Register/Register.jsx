@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import {loginUser} from "../../Services/auth"
+import {registerUser} from "../../Services/auth"
 
 export default function Login(props) {
     const [formData, setFormData] = useState({
         username: '',
-        password: ''
+        emailAddress: '',
+        password: '',
+        confirmPassword: ''
     })
 
     const handleChange = (e) => {
@@ -18,15 +20,23 @@ export default function Login(props) {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const userData = await loginUser(formData); //since we need to use this response from our DB, we need to add await
+        const userData = await registerUser(formData); //since we need to use this response from our DB, we need to add await
         props.setCurrentUser(userData);
-        props.history.push('/')
+        props.history.push('/home')
     }
 
     return (
         <div>
-            <h3>Login</h3>
+            <h3>Register</h3>
             <form onSubmit={handleSubmit}>
+                <label>Email:</label>
+                <input 
+                    type="text" 
+                    name='emailAddress' 
+                    value={formData.emailAddress} 
+                    onChange = {handleChange}
+                /> 
+
                 <label>Username:</label>
                 <input 
                     type="text" 
@@ -43,7 +53,16 @@ export default function Login(props) {
                     onChange = {handleChange}
                 />
 
-                <button>Submit</button> 
+                <label>Password:</label> 
+                <input 
+                    type="password" 
+                    name="confirmPassword" 
+                    value ={formData.confirmPassword}
+                    onChange = {handleChange}
+                />
+
+
+                <button>Register</button> 
 
                 
             </form>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {Route, Link} from "react-router-dom"
+
+
 import Login from "../../Login/Login"
 import Intro from '../../Intro/Intro'
 import Home from '../../Home/Home'
+import Register from '../../Register/Register'
 
 export default function Main(props) {
     const { setCurrentUser } = props;
@@ -22,6 +25,15 @@ export default function Main(props) {
                 {...props} //add all react router props into login
                 setCurrentUser={setCurrentUser}
                 />
+            )}
+
+            />
+
+            <Route path='/register' render={(props) => (
+                <Register
+                    
+                />
+
             )}
             />
             
