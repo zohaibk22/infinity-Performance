@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Route, Link} from "react-router-dom"
 
 
@@ -7,7 +7,11 @@ import Intro from '../../Intro/Intro'
 import Home from '../../Home/Home'
 import Register from '../../Register/Register'
 
+
+
 export default function Main(props) {
+
+    const [showAllVehicleData, setShowAllVehicleData] = useState([]);
     const { setCurrentUser } = props;
     return (
         <main>
