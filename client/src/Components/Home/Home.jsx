@@ -1,9 +1,21 @@
 import React from 'react'
 
 export default function Home(props) {
+
+
+
     return (
         <div>
-            <h1>Where all our projects will be located</h1>
+            <h1>All Project</h1>
+
+            {props.showAllVehicleData.map((element) => (
+                <div onClick = {()=> ( props.history.push('/vehicles/:id'))}>
+
+                    <h3>Vehicle: {element.make} {element.model}</h3>
+
+                </div>
+            ))}
+            <button>Add Project +</button>
         </div>
     )
 }

@@ -4,7 +4,9 @@ import "./App.css";
 import Header from "./Components/shared/Header/Header";
 import Main from "./Components/shared/Main/Main";
 import { Route, Link } from "react-router-dom";
+
 import { verifyUser } from "./Services/auth";
+import { readAllVehicles } from "./Services/vehicle";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -17,9 +19,10 @@ function App() {
     const userData = await verifyUser(); //resetting the data we got back from our auth token, which is all the user credentials, back into setUserData
     setCurrentUser(userData);
   };
+
   return (
     <>
-      <Header currentUser={currentUser} />
+      <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Main setCurrentUser={setCurrentUser} />
     </>
   );
