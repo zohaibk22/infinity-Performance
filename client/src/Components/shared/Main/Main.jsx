@@ -70,11 +70,11 @@ export default function Main(props) {
                 <OneVehicle 
                  {...props}
                  />
-
-
             )}
-                
             />
+
+            <Route path='/vehicles'/>
+            
         </main>
     )
 }
