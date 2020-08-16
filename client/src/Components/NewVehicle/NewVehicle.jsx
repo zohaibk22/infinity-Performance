@@ -24,7 +24,7 @@ export default function NewVehicle() {
 
     return (
         <div>
-            <h2>Create a New Car</h2>
+            <h2>Create a New Vehicle</h2>
 
             <form>
                 <label>Vehicle Type: </label>
