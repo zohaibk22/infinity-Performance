@@ -10,7 +10,6 @@ import { readAllVehicles } from "./Services/vehicle";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  const [showAllVehicleData, setShowAllVehicleData] = useState([]);
 
   useEffect(() => {
     handleVerify(); //checking to see whenever the page loads, if we have a auth token so that we can stay logged in
