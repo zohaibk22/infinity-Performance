@@ -31,7 +31,8 @@ export default function Main(props) {
 
             <Route path='/register' render={(props) => (
                 <Register
-                    
+                    {...props} //add all react router props into login
+                setCurrentUser={setCurrentUser}
                 />
 
             )}

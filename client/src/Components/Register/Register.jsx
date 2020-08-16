@@ -5,9 +5,9 @@ import {registerUser} from "../../Services/auth"
 export default function Login(props) {
     const [formData, setFormData] = useState({
         username: '',
-        emailAddress: '',
-        password: '',
-        confirmPassword: ''
+        email: '',
+        password: ''
+        // confirmPassword: ''
     })
 
     const handleChange = (e) => {
@@ -32,7 +32,7 @@ export default function Login(props) {
                 <label>Email:</label>
                 <input 
                     type="text" 
-                    name='emailAddress' 
+                    name='email' 
                     value={formData.emailAddress} 
                     onChange = {handleChange}
                 /> 
@@ -53,13 +53,13 @@ export default function Login(props) {
                     onChange = {handleChange}
                 />
 
-                <label>Password:</label> 
+                {/* <label>Password:</label> 
                 <input 
                     type="password" 
                     name="confirmPassword" 
                     value ={formData.confirmPassword}
                     onChange = {handleChange}
-                />
+                /> */}
 
 
                 <button>Register</button> 

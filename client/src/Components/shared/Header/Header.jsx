@@ -10,7 +10,7 @@ export default function Header(props) {
 
             {props.currentUser !==null ? 
                 <>
-                 <p1>{props.currentUser.username}</p1>
+                 <p>{props.currentUser.username}</p>
                  <button>Logout</button>
                 </>
             
