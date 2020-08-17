@@ -12,7 +12,19 @@ export default function OneVehicle(props) {
     const getOneVehicle = async () => {
         const oneCar = await readOneVehicle(props.match.params.id)
         setReadOne(oneCar)
+        // console.log(oneCar.modifications[0].name)
     }
+
+    
+    // let modificationsRender;
+    // if(readOne) {
+    //     modificationsRender = readOne.modifications.map((element, i)=> {
+    //     return <div>{element[0].name}</div>;
+    //     })
+    // }
+
+    console.log(readOne)
+
     return (
         <div>
             <div>
@@ -36,10 +48,15 @@ export default function OneVehicle(props) {
             <button>Delete</button>
             
             <div>
-                <h1>Modifications</h1>
-                {readOne.modifications.map((element) => (
-                    <p>{element[0].brand_name}</p>
-                ))}
+                <h2>Modifications</h2>
+
+                    
+                {/* {readOne && readOne.modifications.map((element,i) => (
+                    <div>
+                        <p>{element[0].brand_name}</p>
+                    </div>
+                    ))} */}
+                
             </div>
             
         </div>
