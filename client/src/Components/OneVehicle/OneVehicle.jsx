@@ -23,6 +23,10 @@ export default function OneVehicle(props) {
     //     })
     // }
 
+    const handleDelete = async () => {
+
+    }
+
     console.log(readOne)
 
     return (
