@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { readOneVehicle } from '../../Services/vehicle'
+import { readOneVehicle, deleteVehicle } from '../../Services/vehicle'
 
 export default function OneVehicle(props) {
 
@@ -12,7 +12,26 @@ export default function OneVehicle(props) {
     const getOneVehicle = async () => {
         const oneCar = await readOneVehicle(props.match.params.id)
         setReadOne(oneCar)
+        // console.log(oneCar.modifications[0].name)
     }
+
+    
+    // let modificationsRender;
+    // if(readOne) {
+    //     modificationsRender = readOne.modifications.map((element, i)=> {
+    //     return <div>{element[0].name}</div>;
+    //     })
+    // }
+
+    const handleDelete = async (id) => {
+        await deleteVehicle(props.match.params.id)
+        props.setShowAllVehicleData(props.showAllVehicleData)
+        props.history.push('/vehicles')
+
+    }
+
+    console.log(readOne)
+
     return (
         <div>
             <div>
@@ -32,14 +51,19 @@ export default function OneVehicle(props) {
             }
             </div>
 
-            <button>Edit</button>
-            <button>Delete</button>
+            <button onClick ={props.history.push(`/vehicles/edit/${props.match.params.id}`)}>Edit</button>
+            <button onClick = {()=> handleDelete(readOne.id)}>Delete</button>
             
             <div>
-                <h1>Modifications</h1>
-                {readOne.modifications.map((element) => (
-                    <p>{element[0].brand_name}</p>
-                ))}
+                <h2>Modifications</h2>
+
+                    
+                {/* {readOne && readOne.modifications.map((element,i) => (
+                    <div>
+                        <p>{element[0].brand_name}</p>
+                    </div>
+                    ))} */}
+                
             </div>
             
         </div>

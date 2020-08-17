@@ -70,6 +70,8 @@ export default function Main(props) {
             <Route path='/vehicles/:id'  exact render={(props) => (
                 <OneVehicle 
                  {...props}
+                 showAllVehicleData = {showAllVehicleData}
+                 setShowAllVehicleData = {setShowAllVehicleData}
                  />
             )}
             />
