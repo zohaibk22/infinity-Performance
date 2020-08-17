@@ -67,7 +67,7 @@ export default function Main(props) {
             />
             
 
-            <Route path='/vehicle/:id'  exact render={(props) => (
+            <Route path='/vehicles/:id'  exact render={(props) => (
                 <OneVehicle 
                  {...props}
                  />

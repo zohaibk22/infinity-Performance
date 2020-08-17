@@ -9,7 +9,7 @@ export default function Home(props) {
             <h1>All Project</h1>
 
             {props.showAllVehicleData.map((element) => (
-                <div onClick = {()=> ( props.history.push('/vehicles/:id'))}>
+                <div onClick = {()=> ( props.history.push(`/vehicles/${element.id}`))}>
 
                     <h3>Vehicle: {element.make} {element.model}</h3>
 
