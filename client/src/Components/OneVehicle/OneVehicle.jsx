@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { readOneVehicle } from '../../Services/vehicle'
+import { readOneVehicle, deleteVehicle } from '../../Services/vehicle'
 
 export default function OneVehicle(props) {
 
@@ -23,7 +23,10 @@ export default function OneVehicle(props) {
     //     })
     // }
 
-    const handleDelete = async () => {
+    const handleDelete = async (id) => {
+        await deleteVehicle(props.match.params.id)
+        props.setShowAllVehicleData(props.showAllVehicleData)
+        props.history.push('/vehicles')
 
     }
 
@@ -48,8 +51,8 @@ export default function OneVehicle(props) {
             }
             </div>
 
-            <button>Edit</button>
-            <button>Delete</button>
+            <button onClick ={props.history.push(`/vehicles/edit/${props.match.params.id}`)}>Edit</button>
+            <button onClick = {()=> handleDelete(readOne.id)}>Delete</button>
             
             <div>
                 <h2>Modifications</h2>
