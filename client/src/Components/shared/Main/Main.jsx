@@ -37,7 +37,7 @@ export default function Main(props) {
                 <Intro />
             )}/>
 
-            <Route path='/home' exact render={(props)=> (
+            <Route path='/vehicles' exact render={(props)=> (
                 <Home 
                 
                 {...props}
@@ -67,17 +67,20 @@ export default function Main(props) {
             />
             
 
-            <Route path='/vehicles/:id'  exact render={(props) => (
+            <Route path='/vehicle/:id'  exact render={(props) => (
                 <OneVehicle 
                  {...props}
                  />
             )}
             />
 
-            <Route path='/vehicles' exact render={(props) => (
+            <Route path='/vehicles/new' exact render={(props) => (
                 <NewVehicle
                 
                 {...props}
+            
+                showAllVehicleData = {showAllVehicleData}
+                setShowAllVehicleData = {setShowAllVehicleData}
 
                 
                 

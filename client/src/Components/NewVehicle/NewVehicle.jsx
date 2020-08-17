@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
+import { createNewVehicle } from '../../Services/vehicle';
 
-export default function NewVehicle() {
+export default function NewVehicle(props) {
     const [vehicleData, setVehicleData] = useState({
         vehicle_type: '',
         make: '',
         model: '',
-        year: null,
+        year: 0,
         engine_type: '',
         description: '',
         color: '',
@@ -14,6 +15,7 @@ export default function NewVehicle() {
     })
 
     const handleChange = (e) => {
+        
         const {name, value} = e.target;
         setVehicleData({
             ...vehicleData,
@@ -21,12 +23,24 @@ export default function NewVehicle() {
         })
     }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const newVehicle = await createNewVehicle(vehicleData)
+        props.setShowAllVehicleData([
+            ...props.showAllVehicleData,
+            newVehicle
+        ] )
+        props.history.push('/vehicles')
+        
+
+    }
+
 
     return (
         <div>
             <h2>Create a New Vehicle</h2>
 
-            <form>
+            <form onSubmit ={handleSubmit}>
                 <label>Vehicle Type: </label>
                 <input 
                     type="text" 

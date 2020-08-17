@@ -19,7 +19,7 @@ import {removeToken} from '../../../Services/auth'
     }
     return (
         <div>
-            <Link to='/home'><h1>Infinity Auto</h1></Link>
+            <Link to='/vehicles'><h1>Infinity Auto</h1></Link>
             
 
             {props.currentUser !==null ? 
