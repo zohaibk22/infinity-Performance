@@ -13,7 +13,7 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1
   def show
     # @vehicle.user = @current_user
-    render json: @vehicle
+    render json: @vehicle, include: :modifications
   end
 
   # POST /vehicles
