@@ -1,16 +1,18 @@
 class VehiclesController < ApplicationController
   before_action :set_vehicle, only: [:show, :update, :destroy]
-  before_action :authorize_request, only: [:create,:update, :destroy]
+  before_action :authorize_request , only: [:create,:update, :destroy]
 
   # GET /vehicles
   def index
     @vehicles = Vehicle.all
+    # @vehicles.user = @current_user
 
     render json: @vehicles
   end
 
   # GET /vehicles/1
   def show
+    # @vehicle.user = @current_user
     render json: @vehicle
   end
 
