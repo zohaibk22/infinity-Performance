@@ -8,6 +8,7 @@ import Home from '../../Home/Home'
 import Register from '../../Register/Register'
 import OneVehicle from '../../OneVehicle/OneVehicle'
 import NewVehicle from '../../NewVehicle/NewVehicle'
+import EditVehicle from '../../EditVehicle/EditVehicle'
 
 
 
@@ -32,6 +33,7 @@ export default function Main(props) {
         
   };
     return (
+
         <main>
             <Route path='/' exact render={(props)=> (
                 <Intro />
@@ -67,7 +69,7 @@ export default function Main(props) {
             />
             
 
-            <Route path='/vehicles/:id'  exact render={(props) => (
+            <Route path='/vehicles/:id' exact render={(props) => (
                 <OneVehicle 
                  {...props}
                  showAllVehicleData = {showAllVehicleData}
@@ -84,11 +86,23 @@ export default function Main(props) {
                 showAllVehicleData = {showAllVehicleData}
                 setShowAllVehicleData = {setShowAllVehicleData}
 
-                
-                
                 />
             )}
             
+            />
+
+             <Route path='/vehicles/edit/:id' exact render={(props) => (
+                <EditVehicle
+
+
+                
+                {...props}
+
+                showAllVehicleData = {showAllVehicleData}
+                setShowAllVehicleData = {setShowAllVehicleData}
+
+                />
+            )}
             />
 
         </main>

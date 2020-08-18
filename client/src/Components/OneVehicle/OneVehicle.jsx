@@ -51,18 +51,21 @@ export default function OneVehicle(props) {
             }
             </div>
 
-            <button onClick ={props.history.push(`/vehicles/edit/${props.match.params.id}`)}>Edit</button>
+            <button onClick ={()=> (props.history.push(`/vehicles/edit/${props.match.params.id}`))}>Edit</button>
             <button onClick = {()=> handleDelete(readOne.id)}>Delete</button>
             
             <div>
                 <h2>Modifications</h2>
 
                     
-                {/* {readOne && readOne.modifications.map((element,i) => (
+                {readOne.modifications && readOne.modifications.map((element) => (
                     <div>
-                        <p>{element[0].brand_name}</p>
+                        <p>{element.brand_name}</p>
                     </div>
-                    ))} */}
+
+                    ))}
+
+                    
                 
             </div>
             

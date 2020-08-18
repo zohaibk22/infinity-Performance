@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
-      <Main setCurrentUser={setCurrentUser} />
+      <Main setCurrentUser={setCurrentUser} currentUser={currentUser} />
     </>
   );
 }
