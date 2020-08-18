@@ -22,7 +22,7 @@ export default function Login(props) {
         e.preventDefault();
         const userData = await registerUser(formData); //since we need to use this response from our DB, we need to add await
         props.setCurrentUser(userData);
-        props.history.push('/home')
+        props.history.push('/vehicles')
     }
 
     return (

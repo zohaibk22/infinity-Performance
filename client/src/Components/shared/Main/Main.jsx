@@ -24,9 +24,11 @@ export default function Main(props) {
     const [modificationData, setModificationData] = useState([])
 
     useEffect(()=>{
-        getAllVehicles()
+        if(currentUser){
+            getAllVehicles()
+        }
 
-    }, [])
+    }, [currentUser]) //useEffect will watch this value for changes and then run again once the value changes
 
     const getAllModifications = async() => {
 

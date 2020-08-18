@@ -19,7 +19,9 @@ export default function OneVehicle(props) {
 
     const handleDelete = async (id) => {
         await deleteVehicle(props.match.params.id)
-        props.setShowAllVehicleData(props.showAllVehicleData)
+        props.setShowAllVehicleData(props.showAllVehicleData.filter((eachVehicle)=> {
+            return parseInt(props.match.params.id) !== eachVehicle.id 
+        }))
         props.history.push('/vehicles')
 
     }
