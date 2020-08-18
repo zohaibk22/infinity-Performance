@@ -16,12 +16,6 @@ export default function OneVehicle(props) {
     }
 
     
-    // let modificationsRender;
-    // if(readOne) {
-    //     modificationsRender = readOne.modifications.map((element, i)=> {
-    //     return <div>{element[0].name}</div>;
-    //     })
-    // }
 
     const handleDelete = async (id) => {
         await deleteVehicle(props.match.params.id)
@@ -65,7 +59,7 @@ export default function OneVehicle(props) {
 
                     ))}
 
-                    
+                    <button onClick={()=> {props.history.push(`/modifications/new`)}}>Add Modiification</button>
                 
             </div>
             
