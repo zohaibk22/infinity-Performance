@@ -18,17 +18,24 @@ import {removeToken} from '../../../Services/auth'
 
     }
     return (
-        <div>
-            <Link to='/vehicles'><h1>Infinity Auto</h1></Link>
+        <div className ='main-header-container'>
+            <Link to='/vehicles'><h1 className="logo alignment">INFINITY <span className='half-name'>AUTO</span></h1></Link>
+            
+
+            <ul className ='header-options alignment'>
+                <li className = "list-item alignment">Our Story</li>
+                <li className = "list-item alignment">Previous Builds</li>
+                <li className = "list-item alignment">Contact Us</li>
+            </ul>
             
 
             {props.currentUser !==null ? 
                 <>
-                 <p>{props.currentUser.username}</p>
-                 <button onClick={handleLogout}>Logout</button>
+                 <p className = 'username alignment'>{props.currentUser.username}</p>
+                 <button className = "logout alignment" onClick={handleLogout}>Logout</button>
                 </>
             
-            : <Link to="/login">Login</Link>
+            : <Link className = 'login alignment' to="/login">Login</Link>
             }
             
         </div>

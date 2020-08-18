@@ -59,7 +59,7 @@ export default function OneVehicle(props) {
 
                     ))}
 
-                    <button onClick={()=> {props.history.push(`/modifications/new`)}}>Add Modiification</button>
+                    <button onClick={()=> {props.history.push(`/modifications/${props.match.params.id}/new`)}}>Add Modiification</button>
                 
             </div>
             

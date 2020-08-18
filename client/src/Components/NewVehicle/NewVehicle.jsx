@@ -6,7 +6,7 @@ export default function NewVehicle(props) {
         vehicle_type: '',
         make: '',
         model: '',
-        year: 0,
+        year: null,
         engine_type: '',
         description: '',
         color: '',

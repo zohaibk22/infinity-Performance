@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import {Route, Link} from "react-router-dom"
-
+import {readAllVehicles} from '../../../Services/vehicle'
 
 import Login from "../../Login/Login"
 import Intro from '../../Intro/Intro'
@@ -11,9 +11,8 @@ import NewVehicle from '../../NewVehicle/NewVehicle'
 import EditVehicle from '../../EditVehicle/EditVehicle'
 import CreateModification from '../../CreateModification/CreateModification'
 
+import './Main.css'
 
-
-import {readAllVehicles} from '../../../Services/vehicle'
 
 
 
@@ -38,11 +37,14 @@ export default function Main(props) {
         
   };
     return (
-        <>
+        <div className='main-div-container'>
 
         {  currentUser ?  <main>
             <Route path='/' exact render={(props)=> (
-                <Intro />
+                <Intro
+                {...props}
+
+                />
             )}/>
 
             <Route path='/vehicles' exact render={(props)=> (
@@ -111,12 +113,14 @@ export default function Main(props) {
             )}
             />
 
-            <Route path='/modifications/new' render={(props)=> (
+            <Route path='/modifications/:id/new' render={(props)=> (
 
                  <CreateModification 
+                 
+                 {...props}
 
                  modificationData = {modificationData}
-                 setModificationData ={modificationData}
+                 setModificationData ={setModificationData}
 
 
                  />
@@ -213,7 +217,7 @@ export default function Main(props) {
 
         }
 
-        </>
+        </div>
 
         
     )

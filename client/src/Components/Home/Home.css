@@ -1,3 +1,53 @@
+.main-home-div{
+    height: 80vh;
+    background-color:#393e46;
+
+}
+
+.vehicle-list{
+    display: flex;
+    justify-content: space-evenly
+}
+
 .vehicle-div{
-    border: 5px solid green
+    border: 5px solid black;
+    border-radius: 5%;
+    background-color: #015668;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    position: relative;
+    top: 20vh;
+    height: 15vh;
+    padding: 2vh;
+
+}
+
+.vehicle-div:hover {
+    
+}
+
+.title{
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    font-size: 5vh;
+    top: 12vh;
+    background-color: green;
+    width: 15vw;
+    padding: 1vh 2vh; 
+    left: 40%;
+    border-radius: 5%;
+    border: 5px solid white;
+}
+
+
+
+.add-project-bttn{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding: 2vh 3vh;
+    font-size: 2vh;
+    border: 5px solid black;
+    border-radius: 50%
+
 }
