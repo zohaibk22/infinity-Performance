@@ -123,8 +123,6 @@ export default function Main(props) {
 
             )}
 
-
-
             />
 
         </main> 
@@ -195,20 +193,18 @@ export default function Main(props) {
 
              <Route path='/modifications/new' render={(props)=> (
 
-                <Login
-                {...props} //add all react router props into login
-                setCurrentUser={setCurrentUser}
-                />
+                 <CreateModification 
+
+                 modificationData = {modificationData}
+                 setModificationData ={modificationData}
+
+
+                 />
 
             )}
-
-
-
             />
 
            
-
-
             </main>
 
 
