@@ -1,6 +1,6 @@
 class ModificationsController < ApplicationController
   before_action :set_modification, only: [:show, :update, :destroy]
-  before_action :authorize_request, only: [:index, :show, :create, :destroy, :update] 
+  # before_action :authorize_request, only: [:index, :show, :create, :destroy, :update] 
 
   # GET /modifications
   def index
@@ -17,7 +17,7 @@ class ModificationsController < ApplicationController
   # POST /modifications
   def create
     @modification = Modification.new(modification_params)
-    # @modification.user = @current_user
+    @modification.user = @current_user
 
     if @modification.save
       render json: @modification, status: :created, location: @modification
