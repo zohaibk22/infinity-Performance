@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Hepta+Slab:wght@700&display=swap');
+
+.main-login-div{
+    height: 80vh;
+    background-color:#393e46;
+
+}
+
+
+.signin-title{
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    font-size: 4vh;
+    top: 12vh;
+    background-color: #838383;
+    width: 20vw;
+    padding: 1vh 2vh; 
+    left: 40%;
+    border-radius: 25px;
+    /* border: 5px solid black; */
+    font-family: 'Coustard', serif;
+    
+}
+
+.login-form {
+    position: relative;
+    background-color: #838383;
+    height: 50vh;
+    width: 40vw;
+    top: 25%;
+    left: 30%;
+    border-radius: 10%;
+    font-family: 'Hepta Slab', serif;
+    
+
+}
+
+label{
+    display: block;
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: 1.5vh 3vh;
+    font-size: 3vh;
+    border-radius: 15px;
+    left: 5vh;
+    font-family: 'Hepta Slab', serif;
+}
+    
+input{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    border-radius: 15px;
+    left: 40vh;
+}
+
+.username-login{
+    top: 10vh;
+}
+.password-login{
+    top: 25vh;
+
+}
+
+.username-input {
+    top: 10vh;
+    
+}
+
+.password-input {
+    top: 25vh;
+}
+
+.bttn-combo{
+    position: absolute;
+    padding: 2vh 4vh;
+    font-size: 2vh;
+    border-radius: 50px;
+    top: 40vh;
+    font-family: 'Hepta Slab', serif;
+    transition-duration: 0.5s;
+    
+
+}
+
+.bttn-combo:hover {
+     background-color: red;
+    color: white;
+}
+
+.login-bttn{
+    right: 15vh;
+ 
+
+}
+
+.register-bttn{
+
+    left: 15vh;
+
+
+}
