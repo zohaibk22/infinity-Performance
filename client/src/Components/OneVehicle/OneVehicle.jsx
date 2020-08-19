@@ -30,7 +30,7 @@ export default function OneVehicle(props) {
     console.log(readOne)
 
     return (
-        <div className='main-login-div'>
+        <div className='main-one-div'>
 
 
             <h1 className ='signin-title'>Project Details</h1>

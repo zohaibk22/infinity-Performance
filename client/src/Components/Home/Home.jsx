@@ -14,7 +14,7 @@ export default function Home(props) {
             {props.showAllVehicleData.map((element, i) => (
                 <div className="vehicle-div" onClick = {()=> ( props.history.push(`/vehicles/${element.id}`))}>
 
-                    <h2 className='combo-title proj-title' >Project {i+1}</h2>
+                    <h2 className='complete-title proj-title' >Project {i+1}</h2>
 
 
                     <h3 className = 'car-name'>{element.make} {element.model}</h3>

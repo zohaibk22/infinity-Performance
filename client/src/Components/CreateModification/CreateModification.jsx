@@ -38,16 +38,16 @@ export default function CreateModification(props) {
     
     return (
         <div className='main-login-div'>
-            <h3 className = 'signin-title'>Add Mod</h3>
+            <h3 className = 'signin-title mod-title'>Add Mod</h3>
 
             <form className = 'create-mod-form' onSubmit ={handleSubmit}>
 
                 <div className='form-flex mod-flex-div'>
                 
-                <div className='flex-item'>
-                <label className ='label-edit'>Name:</label>
+                <div className='flex-item flex-items'>
+                <label className ='label-edit label-edit-mod'>Name:</label>
                 <input 
-                className ='input-edit'
+                className ='input-edit input-edit-mod'
                     type='text' 
                     name="name"
                     value={modData.name}
@@ -55,10 +55,10 @@ export default function CreateModification(props) {
                 />
                 </div>
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Brand Name:</label>
+                <div className='flex-item flex-items'>
+                <label className ='label-edit label-edit-mod'>Brand Name:</label>
                 <input
-                className ='input-edit'
+                className ='input-edit input-edit-mod'
                     type='text'
                     name="brand_name"
                     value={modData.brand_name} 
@@ -80,10 +80,10 @@ export default function CreateModification(props) {
                     value={modData.mod_type} 
                 />Visual Modification  */}
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Performance Gain:</label>
+                <div className='flex-item flex-items'>
+                <label className ='label-edit label-edit-mod'>Performance Gain:</label>
                 <input 
-                className ='input-edit'
+                className ='input-edit input-edit-mod'
                     type='text'
                     name="performance_gain"
                     value={modData.performance_gain}
@@ -91,10 +91,10 @@ export default function CreateModification(props) {
                 />
                 </div>
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Cost: </label>
+                <div className='flex-item flex-items'>
+                <label className ='label-edit label-edit-mod'>Cost: </label>
                 <input
-                className ='input-edit'
+                className ='input-edit input-edit-mod'
                     type='text'
                     name="cost"
                     value={modData.cost}

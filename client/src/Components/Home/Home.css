@@ -35,6 +35,18 @@
     
 }
 
+.complete-title{
+    position: relative;
+    font-size: 3vh;
+    text-align:center;
+    background-color: black;
+    color:  #838383;
+    width: 15vw;
+    padding: 1vh 2vh;
+    font-family: 'Coustard', serif;
+    border-radius: 25px;
+}
+
 
 
 .add-project-bttn{
@@ -107,17 +119,16 @@
 
 .proj-title{
     position: relative;
-    left: 0vh;
+    left: -1vh;
     text-align: center;
-    font-size: .5vh;
-    width: 10vw;
+    font-size: 3vh;
+    width: 25vw;
     top: -4vh;
 }
 
 .car-name{
     font-size: 2vh;
      font-family: 'Hepta Slab', serif;
-
 }
 
 .car-info{

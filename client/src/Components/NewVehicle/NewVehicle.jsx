@@ -39,15 +39,15 @@ export default function NewVehicle(props) {
 
     return (
         <div className='main-login-div'>
-            <h2 className='signin-title'>Create a New Vehicle</h2>
+            <h2 className='signin-title new-veh'>Create a New Vehicle</h2>
 
-            <form className='edit-form create-form' onSubmit ={handleSubmit}>
+            <form className='create-form' onSubmit ={handleSubmit}>
                 < div className='form-flex'>
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Vehicle Type: </label>
+                <div className=' item-flex'>
+                <label className =' edit-label'>Vehicle Type: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='vehicle_type'
                     value={vehicleData.vehicle_type}
@@ -57,10 +57,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Make: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Make: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='make'
                     value={vehicleData.make}
@@ -69,10 +69,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Model: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Model: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='model'
                     value={vehicleData.model}
@@ -81,10 +81,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Year: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Year: </label>
                 <input
-                className ='input-edit' 
+                className ='edit-input' 
                     type="text" 
                     name='year'
                     value={vehicleData.year}
@@ -93,10 +93,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Engine Type: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Engine Type: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='engine_type'
                     value={vehicleData.engine_type}
@@ -105,10 +105,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Description: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Description: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='description'
                     value={vehicleData.description}
@@ -117,10 +117,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Color: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Color: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='color'
                     value={vehicleData.color}
@@ -131,10 +131,10 @@ export default function NewVehicle(props) {
                 </div>
 
 
-                <div className='flex-item'>
-                <label className ='label-edit'>Image: </label>
+                <div className='item-flex'>
+                <label className ='edit-label'>Image: </label>
                 <input 
-                className ='input-edit'
+                className ='edit-input'
                     type="text" 
                     name='image'
                     value={vehicleData.image}

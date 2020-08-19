@@ -4,13 +4,13 @@
 
 }
 
-.vehicle-details {
-   
+.main-one-div{
+    height: 80vh;
+    background-color:#393e46;
+
 }
 
-.modification-details{
-    
-}
+
 
 .combo-div {
     width: 40vw;
@@ -116,4 +116,129 @@
 .delete-mod{
     top: 80%;
     right: 10%;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .vehicle-title{
+    margin:0;
+
+}
+
+.main-one-div{
+    height: 80vh;
+    background-color:#393e46;
+
+}
+
+
+
+.combo-div {
+    width: 40vw;
+    height:60vh;
+    background-color: white;
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+.flex-div{
+    position: relative;
+    display:flex;
+    justify-content: space-evenly;
+    top: 15vh;
+
+}
+
+.combo-title{
+    position: relative;
+    font-size: 1.5vh;
+    text-align:center;
+    background-color: black;
+    color:  #838383;
+    width: 20vw;
+    padding: 1vh 2vh;
+    font-family: 'Coustard', serif;
+    border-radius: 25px;
+}
+
+.veh-title{
+    left: 30%
+}
+
+.mod-title{
+    left: 30%;
+}
+
+.vehicle-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+
+
+}
+
+.modification-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+
+
+}
+
+.vehicle-item{
+    text-align: center;
+    background-color: #838383;
+    border: 5px solid black;
+    height: 10vh;
+    width: 10vw;
+    margin: 10px;
+    border-radius: 25px;
+    color: black
+
+}
+.category {
+    font-family: 'Coustard', serif;
+    color: red;
+}
+
+.info{
+    font-family: 'Hepta Slab', serif;
+}
+
+.vehicle-image
+{
+    position: absolute;
+    bottom: 2vh;
+    left: 20%;
+    border-radius: 50px;
+    height: 20vh;
+    border: 5px solid black
+}
+
+.edit-car-bttn {
+    top: 80%;
+    left: 65vh;
+}
+
+.delete-bttn{
+    top:15%;
+    right: 10%
+
+}
+
+.add-mod{
+    top: 80%;
+    right: 32%;
+
+}
+
+.delete-mod{
+    top: 80%;
+    right: 10%;
+}
+
+
 }
