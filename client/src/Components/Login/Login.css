@@ -54,9 +54,10 @@ input{
     color: black;
     background-color: white;
     padding: 1.5vh 3vh;
-    font-size: 2vh;
+    font-size: 1.6vh;
     border-radius: 15px;
     left: 40vh;
+    font-family: 'Hepta Slab', serif;
 }
 
 .username-login{
