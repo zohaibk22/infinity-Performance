@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {createNewModification} from "../../Services/modification"
+import './CreateModification.css'
 
 export default function CreateModification(props) {
 
@@ -36,25 +37,35 @@ export default function CreateModification(props) {
 
     
     return (
-        <div>
-            <h3>Add Mod</h3>
+        <div className='main-login-div'>
+            <h3 className = 'signin-title'>Add Mod</h3>
 
-            <form onSubmit ={handleSubmit}>
-                <label>Name:</label>
+            <form className = 'create-mod-form' onSubmit ={handleSubmit}>
+
+                <div className='form-flex mod-flex-div'>
+                
+                <div className='flex-item'>
+                <label className ='label-edit'>Name:</label>
                 <input 
+                className ='input-edit'
                     type='text' 
                     name="name"
                     value={modData.name}
                     onChange={handleChange}
                 />
+                </div>
 
-                <label>Brand Name:</label>
+                <div className='flex-item'>
+                <label className ='label-edit'>Brand Name:</label>
                 <input
+                className ='input-edit'
                     type='text'
                     name="brand_name"
                     value={modData.brand_name} 
                     onChange={handleChange}
                 />
+                </div>
+
                     {/* Will be part of version 2 */}
                 {/* <label>Modification Type:</label>
                 <input
@@ -69,24 +80,31 @@ export default function CreateModification(props) {
                     value={modData.mod_type} 
                 />Visual Modification  */}
 
-                <label>Performance Gain:</label>
+                <div className='flex-item'>
+                <label className ='label-edit'>Performance Gain:</label>
                 <input 
+                className ='input-edit'
                     type='text'
                     name="performance_gain"
                     value={modData.performance_gain}
                     onChange={handleChange}
                 />
+                </div>
 
-                <label>Cost: </label>
+                <div className='flex-item'>
+                <label className ='label-edit'>Cost: </label>
                 <input
+                className ='input-edit'
                     type='text'
                     name="cost"
                     value={modData.cost}
                     onChange={handleChange}
                     />
+                    </div>
 
-                    <button>Create</button>
+                    <button className='bttn-combo mod-bttn'>Create</button>
 
+                </div>
             </form>
             
         </div>
