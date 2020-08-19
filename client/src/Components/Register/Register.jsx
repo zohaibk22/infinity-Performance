@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import {registerUser} from "../../Services/auth"
+import './Register.css'
 
 export default function Login(props) {
     const [formData, setFormData] = useState({
@@ -26,27 +27,30 @@ export default function Login(props) {
     }
 
     return (
-        <div>
-            <h3>Register</h3>
-            <form onSubmit={handleSubmit}>
-                <label>Email:</label>
+        <div className ='main-login-div'>
+            <h3 className ='register-title'>Register</h3>
+            <form className='register-form 'onSubmit={handleSubmit}>
+                <label className="email-label-register">Email:</label>
                 <input 
+                    className="email-input-register"
                     type="text" 
                     name='email' 
                     value={formData.emailAddress} 
                     onChange = {handleChange}
                 /> 
 
-                <label>Username:</label>
+                <label className="username-label-register">Username:</label>
                 <input 
+                    className="username-input-register"
                     type="text" 
                     name='username' 
                     value={formData.username} 
                     onChange = {handleChange}
                 /> 
 
-                <label>Password:</label> 
+                <label className="password-label-register">Password:</label> 
                 <input 
+                    className="password-input-register"
                     type="password" 
                     name="password" 
                     value = {formData.password} 
@@ -62,10 +66,14 @@ export default function Login(props) {
                 /> */}
 
 
-                <button>Register</button> 
+                <button className ='bttn-combo-reg reg-bttn'>Register</button> 
+                <button className ='bttn-combo-reg log-bttn'onClick={()=>{props.history.push('login')}}>Login</button> 
 
                 
             </form>
+
+    
+
             
         </div>
     )

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { createNewVehicle } from '../../Services/vehicle';
+import "./NewVehicle.css"
 
 export default function NewVehicle(props) {
     const [vehicleData, setVehicleData] = useState({
@@ -37,60 +38,89 @@ export default function NewVehicle(props) {
 
 
     return (
-        <div>
-            <h2>Create a New Vehicle</h2>
+        <div className='main-login-div'>
+            <h2 className='signin-title new-veh'>Create a New Vehicle</h2>
 
-            <form onSubmit ={handleSubmit}>
-                <label>Vehicle Type: </label>
+            <form className='create-form' onSubmit ={handleSubmit}>
+                < div className='form-flex'>
+
+                <div className=' item-flex'>
+                <label className =' edit-label'>Vehicle Type: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='vehicle_type'
                     value={vehicleData.vehicle_type}
                     onChange = {handleChange}
                     />
 
-                <label>Make: </label>
+                </div>
+
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Make: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='make'
                     value={vehicleData.make}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <label>Model: </label>
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Model: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='model'
                     value={vehicleData.model}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <label>Year: </label>
-                <input 
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Year: </label>
+                <input
+                className ='edit-input' 
                     type="text" 
                     name='year'
                     value={vehicleData.year}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <label>Engine Type: </label>
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Engine Type: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='engine_type'
                     value={vehicleData.engine_type}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <label>Description: </label>
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Description: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='description'
                     value={vehicleData.description}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <label>Color: </label>
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Color: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='color'
                     value={vehicleData.color}
@@ -98,15 +128,23 @@ export default function NewVehicle(props) {
 
                 />
 
-                <label>Image: </label>
+                </div>
+
+
+                <div className='item-flex'>
+                <label className ='edit-label'>Image: </label>
                 <input 
+                className ='edit-input'
                     type="text" 
                     name='image'
                     value={vehicleData.image}
                     onChange = {handleChange}
                 />
+                </div>
 
-                <button>Create</button>
+                </div>
+
+                <button className='bttn-combo update-bttn'>Create</button>
             </form>
             
         </div>

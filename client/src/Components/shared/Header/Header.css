@@ -59,14 +59,103 @@
 .logout{
     position: absolute;
     right: 5vw;
-    top: 4vh;
+    top: 3vh;
+    font-family: 'Carter One', cursive;
+    font-size: 1.5vh;
+    border-radius: 10px;
+    padding: .5vh;
+    transition-duration: 0.5s;
 
 }
+
+
 
 .half-name{
     color: white
 }
 
-/* .alignment{
-    bottom: 1vw;
-} */
+.logout:hover{
+ background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+
+ 
+
+.logo {
+   position: absolute;
+   left: 10%;
+   margin: 0;
+   font-family: 'Bungee', cursive;
+   font-size: 7vw;
+   color: red;
+   text-decoration: none;
+   top: 2vh;
+
+}
+
+.header-options{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 2vh;
+}
+
+.list-item{
+    display: none;
+    margin: 3vw;
+    color: #838383;
+    font-size:1vw;
+    font-family: 'Carter One', cursive;
+
+
+}
+
+.login {
+    position: absolute;
+    right: 5vw;
+    text-decoration: none;
+    font-size:5vw;
+    font-family: 'Carter One', cursive;
+    color: #838383;
+    top: 2vh;
+}
+
+.username{
+    position: absolute;
+    right: 13vw;
+    margin: 0;
+    font-size:1vw;
+    font-family: 'Carter One', cursive;
+    color: #838383;
+    top: 4vh;
+    
+}
+
+.logout{
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+    font-family: 'Carter One', cursive;
+    font-size: 1.5vh;
+    border-radius: 10px;
+    padding: .5vh;
+    transition-duration: 0.5s;
+
+}
+
+
+
+.half-name{
+    color: white
+}
+
+.logout:hover{
+ background-color: red;
+    color: white;
+}
+
+
+
+}

@@ -1,0 +1,50 @@
+.create-mod-form {
+    position: relative;
+    
+    height: 55vh;
+    width: 60vw;
+    top: 20%;
+    left: 20%;
+    border-radius: 50px;
+    font-family: 'Hepta Slab', serif;
+    
+
+}
+
+.mod-flex-div {
+    top: 5vh;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .mod-title{
+        height: 5vh;
+        width: 60vw;
+        left: 8vh;
+    }
+
+
+    .mod-flex-div{
+        top: -8vh;
+    }
+
+
+    .input-edit-mod{
+        font-size: 2vh;
+    }
+
+    .label-edit-mod{
+        font-size: 2vh;
+        
+    }
+
+    .flex-items{
+        margin:10px;
+    }
+
+    .mod-bttn{
+        top: 105%;
+    }
+
+}

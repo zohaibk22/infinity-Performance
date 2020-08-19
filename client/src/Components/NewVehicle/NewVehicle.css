@@ -1,0 +1,53 @@
+.create-form{
+    top: 5vh;
+    position: relative;
+    background-color: #838383;
+    height: 55vh;
+    width: 60vw;
+    top: 20%;
+    left: 20%;
+    border-radius: 50px;
+    font-family: 'Hepta Slab', serif;
+    
+
+}
+.edit-input {
+     position: static;
+}
+.item-flex{
+     margin: 20px
+
+}
+
+.edit-label {
+    position:static;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 375px) {
+
+.new-veh{
+    display: none;
+}
+
+.create-form {
+    background-color: #393e46;
+    top: 0%
+
+}
+
+.edit-label{
+    margin-bottom: 5px;
+    font-size: 1vh;
+}
+
+.item-flex{
+    margin: 5px;
+}
+
+.edit-input {
+    font-size: 1vh;
+}
+
+}
