@@ -16,9 +16,11 @@ class ModificationsController < ApplicationController
 
   # POST /modifications
   def create
+    @vehicle = Vehicle.find(params[:vehicle_id])
     @modification = Modification.new(modification_params)
-    @modification.user = @current_user
+    # @modification.user = @current_user
 
+    @modification.vehicle = @vehicle
     if @modification.save
       render json: @modification, status: :created, location: @modification
     else

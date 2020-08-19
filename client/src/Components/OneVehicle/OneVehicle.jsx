@@ -19,7 +19,9 @@ export default function OneVehicle(props) {
 
     const handleDelete = async (id) => {
         await deleteVehicle(props.match.params.id)
-        props.setShowAllVehicleData(props.showAllVehicleData)
+        props.setShowAllVehicleData(props.showAllVehicleData.filter((eachVehicle)=> {
+            return parseInt(props.match.params.id) !== eachVehicle.id 
+        }))
         props.history.push('/vehicles')
 
     }
@@ -52,14 +54,17 @@ export default function OneVehicle(props) {
                 <h2>Modifications</h2>
 
                     
-                {readOne.modifications && readOne.modifications.map((element) => (
+                {readOne.modifications && readOne.modifications.map((element, i) => (
                     <div>
-                        <p>{element.brand_name}</p>
+                        <h3>Modification {i+1} </h3>
+                        <p>Name: {element.name}</p>
+                        <p>Brand: {element.brand_name}</p>
+                        <p></p>
                     </div>
 
                     ))}
 
-                    <button onClick={()=> {props.history.push(`/modifications/new`)}}>Add Modiification</button>
+                    <button onClick={()=> {props.history.push(`/modifications/${props.match.params.id}/new`)}}>Add Modiification</button>
                 
             </div>
             

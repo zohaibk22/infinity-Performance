@@ -7,6 +7,7 @@ import { Route, Link } from "react-router-dom";
 
 import { verifyUser } from "./Services/auth";
 import { readAllVehicles } from "./Services/vehicle";
+import Footer from "./Components/shared/Footer/Footer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -24,6 +25,7 @@ function App() {
     <>
       <Header currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Main setCurrentUser={setCurrentUser} currentUser={currentUser} />
+      <Footer />
     </>
   );
 }

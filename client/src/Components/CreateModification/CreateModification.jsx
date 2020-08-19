@@ -7,8 +7,8 @@ export default function CreateModification(props) {
         name: '',
         brand_name: '',
         mod_type: true,
-        performance_gain: null,
-        cost: null,
+        performance_gain: 0,
+        cost: 0,
     })
 
     const handleChange = (e) => {
@@ -22,7 +22,7 @@ export default function CreateModification(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const newModification = await createNewModification(modData)
+        const newModification = await createNewModification(props.match.params.id, modData)
         props.setModificationData([
             ...props.modificationData,
             newModification

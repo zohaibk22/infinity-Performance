@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :modifications
-  resources :vehicles
+  resources :modifications 
+  resources :vehicles do 
+    resources :modifications, only: :create
+  end
   resources :users
 
   post '/auth/login', to: 'authentication#login'

@@ -6,18 +6,24 @@ export default function Home(props) {
 
 
     return (
-        <div>
-            <h1>All Project</h1>
+        <div className='main-home-div'>
+            <h1 className='title'>All Project</h1>
 
-            {props.showAllVehicleData.map((element) => (
+            <div className='vehicle-list'>
+
+            {props.showAllVehicleData.map((element, i) => (
                 <div className="vehicle-div" onClick = {()=> ( props.history.push(`/vehicles/${element.id}`))}>
 
-                    <h3>Vehicle: {element.make} {element.model}</h3>
+                    <h2>Project {i+1}</h2>
+
+                    <h3>{element.make} {element.model}</h3>
                     <p>{element.description}</p>
 
                 </div>
             ))}
-            <button onClick = {()=> (props.history.push('/vehicles/new'))}>Add Project +</button>
+
+            </div>
+            <button className='add-project-bttn' onClick = {()=> (props.history.push('/vehicles/new'))}>Add Project +</button>
         </div>
     )
 }

@@ -10,8 +10,8 @@ export const readOneModification = async (id) => {
   return resp.data;
 };
 
-export const createNewModification = async (modificationData) => {
-  const resp = await api.post(`/modifications`, {
+export const createNewModification = async (id, modificationData) => {
+  const resp = await api.post(`/vehicles/${id}/modifications`, {
     modification: modificationData,
   });
   return resp.data;
