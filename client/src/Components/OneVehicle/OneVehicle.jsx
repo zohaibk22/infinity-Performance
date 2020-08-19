@@ -54,9 +54,12 @@ export default function OneVehicle(props) {
                 <h2>Modifications</h2>
 
                     
-                {readOne.modifications && readOne.modifications.map((element) => (
+                {readOne.modifications && readOne.modifications.map((element, i) => (
                     <div>
-                        <p>{element.brand_name}</p>
+                        <h3>Modification {i+1} </h3>
+                        <p>Name: {element.name}</p>
+                        <p>Brand: {element.brand_name}</p>
+                        <p></p>
                     </div>
 
                     ))}

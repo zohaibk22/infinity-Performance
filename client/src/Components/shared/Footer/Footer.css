@@ -2,3 +2,43 @@
     height: 10vh;
     background-color: black
 }
+
+.social-buttons a {
+  color: white;
+  margin-right: 25px;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+}
+
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #5f27cd, #d6a2e8);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a .social-icons {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover .social-icons {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+  color: #ffffff;
+}
