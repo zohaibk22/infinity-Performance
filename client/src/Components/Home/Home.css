@@ -60,7 +60,7 @@
     position: relative;
     left: 11vh;
     text-align: center;
-    font-size: 1vh;
+    /* font-size: 1vh; */
 }
 
 .car-name{
