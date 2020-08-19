@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Hepta+Slab:wght@700&display=swap');
 .main-home-div{
     height: 80vh;
     background-color:#393e46;
@@ -6,48 +8,124 @@
 
 .vehicle-list{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .vehicle-div{
     border: 5px solid black;
     border-radius: 5%;
-    background-color: #015668;
+    background-color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     position: relative;
     top: 20vh;
-    height: 15vh;
+    height: 20vh;
+    width: 30vw;
     padding: 2vh;
+    text-align: center;
+    margin: 10px;
+    transition-duration: 0.5s;
 
 }
 
 .vehicle-div:hover {
-    
-}
+     background-color: red;
+    color: white;
 
-.title{
-    position: absolute;
-    margin: 0;
-    text-align: center;
-    font-size: 5vh;
-    top: 12vh;
-    background-color: green;
-    width: 15vw;
-    padding: 1vh 2vh; 
-    left: 40%;
-    border-radius: 5%;
-    border: 5px solid white;
+    
 }
 
 
 
 .add-project-bttn{
-    position: absolute;
     top: 15%;
-    right: 10%;
-    padding: 2vh 3vh;
-    font-size: 2vh;
+    right: 10%
+   
+
+}
+
+.proj-title{
+    position: relative;
+    left: 11vh;
+    text-align: center;
+    font-size: 1vh;
+}
+
+.car-name{
+    font-size: 2.5vh;
+     font-family: 'Hepta Slab', serif;
+
+}
+
+.car-info{
+    font-size: 1.5vh;
+    font-family: 'Hepta Slab', serif;
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+.vehicle-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.vehicle-div{
     border: 5px solid black;
-    border-radius: 50%
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    position: relative;
+    top: 25vh;
+    height: 20vh;
+    width: 30vw;
+    padding: 2vh;
+    text-align: center;
+    margin: 10px;
+    transition-duration: 0.5s;
+
+}
+
+.vehicle-div:hover {
+     background-color: red;
+    color: white;
+
+    
+}
+
+
+
+.add-project-bttn{
+    top: 28%;
+    right: 15%;
+    width: 60vw;
+   
+
+}
+
+.proj-title{
+    position: relative;
+    left: 0vh;
+    text-align: center;
+    font-size: .5vh;
+    width: 10vw;
+    top: -4vh;
+}
+
+.car-name{
+    font-size: 2vh;
+     font-family: 'Hepta Slab', serif;
+
+}
+
+.car-info{
+    display: none;
+    font-size: 1.5vh;
+    font-family: 'Hepta Slab', serif;
+
+}
+
 
 }

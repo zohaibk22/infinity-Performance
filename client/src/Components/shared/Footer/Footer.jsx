@@ -34,6 +34,8 @@ export default function Footer() {
             
             
         </div>
+
+        //Credit to Zahra for helping me with this
     )
 }
 
