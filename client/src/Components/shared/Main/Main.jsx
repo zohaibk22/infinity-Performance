@@ -88,7 +88,7 @@ export default function Main(props) {
             )}
             />
 
-            <Route path='/vehicles/new' exact render={(props) => (
+            <Route path='/new/vehicles/' exact render={(props) => (
                 <NewVehicle
                 
                 {...props}
@@ -115,7 +115,7 @@ export default function Main(props) {
             )}
             />
 
-            <Route path='/modifications/:id/new' render={(props)=> (
+            <Route path='/modifications/:id/new' exact render={(props)=> (
 
                  <CreateModification 
                  

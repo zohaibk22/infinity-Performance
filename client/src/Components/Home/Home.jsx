@@ -23,7 +23,7 @@ export default function Home(props) {
             ))}
 
             </div>
-            <button className='add-project-bttn' onClick = {()=> (props.history.push('/vehicles/new'))}>Add Project +</button>
+            <button className='add-project-bttn' onClick = {()=> (props.history.push('new/vehicles/'))}>Add Project +</button>
         </div>
     )
 }
