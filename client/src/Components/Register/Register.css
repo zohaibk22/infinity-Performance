@@ -13,6 +13,22 @@
 
 }
 
+.register-title{
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    font-size: 4vh;
+    top: 12vh;
+    background-color: #838383;
+    width: 20vw;
+    padding: 1vh 2vh; 
+    left: 40%;
+    border-radius: 25px;
+    /* border: 5px solid black; */
+    font-family: 'Coustard', serif;
+    
+}
+
 .email-label-register{
     top: 10vh;
 }
@@ -55,5 +71,85 @@
     font-family: 'Hepta Slab', serif;
     transition-duration: 0.5s;
     
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .register-form {
+    position: relative;
+    background-color: #838383;
+    height: 60vh;
+    width:80vw;
+    top: 20%;
+    left: 10%;
+    border-radius: 10%;
+    font-family: 'Hepta Slab', serif;
+
+}
+
+.register-title{
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    font-size: 3vh;
+    top: 12vh;
+    background-color: #838383;
+    width: 20vw;
+    padding: 1vh 2vh; 
+    width: 70vw;
+    left: 10%;
+    border-radius: 25px;
+    /* border: 5px solid black; */
+    font-family: 'Coustard', serif;
+    
+}
+
+.email-label-register{
+    top: 2vh;
+}
+
+.email-input-register{
+    top: 10vh;
+}
+
+.username-label-register{
+    top: 17vh;
+}
+
+.username-input-register{
+    top: 25vh;
+}
+
+.password-label-register{
+    top: 32vh;
+}
+
+.password-input-register{
+    top: 40vh;
+}
+
+.reg-bttn{
+    right: 1vh;
+}
+
+ .log-bttn{
+     left: 1vh;
+
+ }
+
+.bttn-combo-reg{
+    position: absolute;
+    padding: 2vh 4vh;
+    font-size: 2vh;
+    border-radius: 50px;
+    top: 50vh;
+    font-family: 'Hepta Slab', serif;
+    transition-duration: 0.5s;
+    
+
+}
+
+
 
 }
