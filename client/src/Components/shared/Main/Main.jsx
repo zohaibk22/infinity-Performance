@@ -141,7 +141,11 @@ export default function Main(props) {
             <main>
 
                  <Route path='/' exact render={(props)=> (
-                <Intro />
+                <Intro
+
+                    {...props}
+                
+                />
             )}/>
 
             <Route path='/vehicles' exact render={(props)=> (

@@ -40,3 +40,51 @@
     top: 46vh;
     left:45vh;
 }
+
+@media screen and (max-width: 375px) {
+
+    .edit-form {
+    position: relative;
+    background-color: #838383;
+    height: 55vh;
+    width: 60vw;
+    top: 20%;
+    left: 20%;
+    border-radius: 50px;
+    font-family: 'Hepta Slab', serif;
+    
+
+}
+
+.form-flex{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 1vh;
+
+}
+
+.label-edit{
+    position:static;
+    margin-bottom: 10px;
+
+    
+}
+
+.input-edit{
+    position: static;
+    
+}
+
+.flex-item{
+    margin: 20px
+}
+
+.update-bttn{
+    top: 46vh;
+    left:45vh;
+}
+
+
+}
